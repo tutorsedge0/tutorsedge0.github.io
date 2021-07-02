@@ -19,20 +19,20 @@ body{
   margin: 0;
   padding: 0;
   background: cadetblue;
+  /* background: #e3e9ff; */
   min-height: 100%;
 }
 
 /* Nav bar */ 
 .active{
   background-color: chocolate;
-  /* color:white; */
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: bisque;
+  background-color: #ffe4c4;
   position: 0;
   width: 100%;
   z-index: 1000;
@@ -74,4 +74,54 @@ nav ul li a {
   right: 10px;
   border-radius: 100px / 10px;
   background-color: #9BCCFD;
+}
+
+/* button */
+.button {
+  background-color: bisque;
+  border: none;
+  margin-top: 30px;
+  color: #E5F3FF;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  transition-duration: 0.01s;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: bold;
+}
+.button2 {
+  background-color: cadetblue;
+  color: black; 
+  border: 5px solid bisque;
+}
+
+.button2:hover {
+  background-color: cadetblue;
+  color: white;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.01s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.01s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
